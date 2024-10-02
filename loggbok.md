@@ -31,6 +31,3 @@ Vit och svart tycker jag är de bästa färgerna för CV:n, på grund av persone
 .-------------------------------------.
 ## Log
 
-Sedan kan du skriva i loggform om vad du har arbetat med från planering och hur det har gått att arbeta med.
-
-Skriv även sådant som du måste arbeta med nästa pass.
