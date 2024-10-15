@@ -1,6 +1,8 @@
 .topnav {
     background-color: rgba(55, 44, 46, 1);
     overflow: hidden;
+    border-bottom: 1px solid white;
+    margin-right: 50px;
 }
 
 .topnav a {
@@ -35,10 +37,28 @@ main {
     margin-top: auto;
     padding: 1rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     max-width: 20rem;
-    position:;
+    position: fixed;
+  
 }
 
-.sidebar h1 {
+.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+.not-sidebar {
+    max-width: auto;
+    margin-left: 24rem;
+    margin-top: -1.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
     
+    
+}
+
+body {
+    background:  rgba(55, 44, 46, 1);
 }

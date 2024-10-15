@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --sidebar-width: 16rem;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        .navbar {
+            border-bottom: 2px solid white;
+        }
+        .with-sidebar {
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: row-reverse; */
+            gap: 1rem;
+        }
+
+        .sidebar {
+            /* ↓ The width when the sidebar _is_ a sidebar */
+            flex-basis: var(--sidebar-width);
+            flex-grow: 1;
+            background-color: yellow;
+        }
+
+        .not-sidebar {
+            /* ↓ Grow from nothing */
+            flex-basis: 0;
+            flex-grow: 999;
+            /* ↓ Wrap when the elements are of equal width */
+            min-inline-size: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2>navbar</h2>
+    </nav>
+    <main class="with-sidebar">
+        <header class="sidebar">
+            <h1>sidebar</h1>
+        </header>
+        <article class="not-sidebar">
+            <h1>article</h1>
+        </article>
+    </main>
+    
+</body>
+
+</html>
